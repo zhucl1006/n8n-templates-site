@@ -1,0 +1,62 @@
+:root{--bg:#ffffff;--fg:#1d2433;--muted:#5b6475;--accent:#3b5bdb;--accent-dark:#2f4ac0;--soft:#f4f6fb;--border:#e3e7ef;--radius:12px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--fg);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--accent)}
+a:hover{color:var(--accent-dark)}
+.container{max-width:1040px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:10}
+header.site .container{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:1.15rem;color:var(--fg);text-decoration:none}
+.brand span{color:var(--accent)}
+nav.main a{margin-left:18px;color:var(--muted);text-decoration:none;font-size:.95rem}
+nav.main a:hover{color:var(--fg)}
+.hero{padding:72px 0 56px;background:linear-gradient(180deg,var(--soft),#fff)}
+.hero h1{font-size:clamp(1.9rem,4.5vw,2.9rem);line-height:1.2;margin:0 0 16px}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:680px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;border:2px solid var(--accent)}
+.btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff}
+.btn.secondary{background:transparent;color:var(--accent)}
+.btn.secondary:hover{background:var(--soft);color:var(--accent-dark)}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:56px 0}
+section.alt{background:var(--soft)}
+h2{font-size:1.75rem;margin:0 0 12px}
+h3{margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:720px}
+.grid{display:grid;gap:20px}
+.grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.card.featured{border:2px solid var(--accent);position:relative}
+.badge{display:inline-block;background:var(--accent);color:#fff;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px;letter-spacing:.02em}
+.tag{display:inline-block;background:var(--soft);color:var(--muted);font-size:.8rem;padding:2px 9px;border-radius:999px;margin:0 6px 6px 0;border:1px solid var(--border)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:14px 0;font-size:.85rem}
+.flow span.step{background:var(--soft);border:1px solid var(--border);border-radius:6px;padding:4px 9px}
+.flow span.arrow{color:var(--muted)}
+ul.check{list-style:none;padding:0;margin:12px 0}
+ul.check li{padding-left:26px;position:relative;margin:6px 0}
+ul.check li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.price{font-size:2.3rem;font-weight:800;margin:6px 0}
+.price small{font-size:.95rem;font-weight:500;color:var(--muted)}
+.card .btn{margin-top:12px;width:100%;text-align:center}
+.note{font-size:.9rem;color:var(--muted)}
+details{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+details summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+.contact-box{text-align:center}
+.contact-box .email{font-size:1.25rem;font-weight:700}
+footer.site{border-top:1px solid var(--border);padding:32px 0;font-size:.9rem;color:var(--muted)}
+footer.site .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer.site nav a{margin-right:16px;color:var(--muted)}
+footer.site nav a:hover{color:var(--fg)}
+.legal{padding:48px 0}
+.legal h1{font-size:2.1rem;margin:0 0 6px}
+.legal h2{font-size:1.3rem;margin:32px 0 8px}
+.legal .updated{color:var(--muted);margin:0 0 24px}
+.legal .container{max-width:780px}
+.legal table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.95rem}
+.legal th,.legal td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}
+.legal th{background:var(--soft)}
+.callout{background:var(--soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px;margin:16px 0}
+@media (max-width:640px){nav.main a{margin-left:12px}.hero{padding:48px 0 40px}section{padding:40px 0}nav.main{width:100%;padding-bottom:10px}nav.main a:first-child{margin-left:0}}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wirebench — Ready-to-import workflow templates for n8n</title>
+<meta name="description" content="Wirebench sells ready-to-import workflow templates for n8n that plug into Apify data Actors: UK Tender Alerts and Domain Lead Enrichment. One-time purchase, instant download.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container">
+    <a class="brand" href="./">Wire<span>bench</span></a>
+    <nav class="main">
+      <a href="#templates">Templates</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <h1>Ready-to-import workflow templates for n8n, powered by Apify data Actors</h1>
+    <p class="lead">Import the file, add your own Apify token, and get UK public-tender alerts in Slack or an enriched domain lead list — in minutes, not days. Everything runs in your own n8n and Apify accounts.</p>
+    <div class="btn-row">
+      <a class="btn" href="#pricing">See pricing</a>
+      <a class="btn secondary" href="#templates">Browse templates</a>
+    </div>
+  </div>
+</section>
+
+<section id="what-you-get">
+  <div class="container">
+    <h2>What you get</h2>
+    <p class="sub">Each template is a downloadable digital product, delivered instantly after checkout.</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Importable workflow file</h3>
+        <p>A tested n8n workflow export you load via <em>Workflows → Import from File</em>. Works on n8n Cloud and self-hosted n8n.</p>
+      </div>
+      <div class="card">
+        <h3>Step-by-step setup guide</h3>
+        <p>How to create the credential, which nodes to configure, and how to adapt the output (Slack, Feishu, DingTalk, JSON, Google Sheets).</p>
+      </div>
+      <div class="card">
+        <h3>Example inputs + support</h3>
+        <p>Sample configuration / CSV files so you can test immediately, plus 7 days of email support for import and setup issues.</p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:20px">Not included: Apify usage fees (billed pay-per-use to your own Apify account), n8n hosting, or custom development work.</p>
+  </div>
+</section>
+
+<section id="templates" class="alt">
+  <div class="container">
+    <h2>The templates</h2>
+    <p class="sub">Two focused automations, each built around public data sources and your own credentials. No API keys are stored by us.</p>
+    <div class="grid cols-2">
+      <article class="card" id="uk-tender-alerts">
+        <span class="tag">Public procurement</span><span class="tag">Alerts</span>
+        <h3>UK Tender Alerts</h3>
+        <p>Get notified about new UK public-sector contract awards that match your keywords. On a weekday schedule (or on demand) the workflow pulls recent notices from UK Contracts Finder via an Apify Actor, removes notices you have already seen, optionally filters by minimum value, and posts a concise alert to your Slack channel (Feishu / DingTalk supported with a small payload change).</p>
+        <div class="flow" aria-label="Workflow outline">
+          <span class="step">Weekday schedule</span><span class="arrow">→</span>
+          <span class="step">Your keywords</span><span class="arrow">→</span>
+          <span class="step">Apify: UK Contracts Finder</span><span class="arrow">→</span>
+          <span class="step">Dedupe &amp; filter</span><span class="arrow">→</span>
+          <span class="step">Slack alert</span>
+        </div>
+        <ul class="check">
+          <li>Configurable keywords, look-back window and optional minimum award value</li>
+          <li>Alerts list title, buyer, supplier, award value and a link to each notice</li>
+          <li>Remembers notices already sent and only posts when there is something new</li>
+        </ul>
+        <p class="note">You provide: Apify token, Slack/Feishu/DingTalk webhook URL, n8n (Cloud or self-hosted).</p>
+        <p class="price">$39 <small>one-time</small></p>
+        <a class="btn" href="#buy-PLACEHOLDER-uk-tender-alerts">Buy UK Tender Alerts — $39</a>
+      </article>
+
+      <article class="card" id="domain-lead-enrichment">
+        <span class="tag">Lead research</span><span class="tag">Enrichment</span>
+        <h3>Domain Lead Enrichment</h3>
+        <p>Turn a plain list of company domains into a structured lead sheet. The workflow looks up WHOIS / RDAP registration data for each domain and can optionally extract publicly listed contact details from the company's own website, then merges everything into one clean JSON file — or straight into Google Sheets.</p>
+        <div class="flow" aria-label="Workflow outline">
+          <span class="step">Domain list</span><span class="arrow">→</span>
+          <span class="step">Apify: WHOIS / RDAP</span><span class="arrow">→</span>
+          <span class="step">Optional: public contact page</span><span class="arrow">→</span>
+          <span class="step">Merge</span><span class="arrow">→</span>
+          <span class="step">JSON / Sheets</span>
+        </div>
+        <ul class="check">
+          <li>Registrar, creation &amp; expiry dates, days until expiry, name servers, registrant organisation &amp; country</li>
+          <li>Two modes: WHOIS only, or WHOIS + public contact extraction</li>
+          <li>Contact mode adds publicly listed emails, phone numbers and social profiles</li>
+        </ul>
+        <p class="note">You provide: Apify token, your own domain list, n8n (Cloud or self-hosted). For lawful lead research on domains you are allowed to process — not for unsolicited bulk email.</p>
+        <p class="price">$59 <small>one-time</small></p>
+        <a class="btn" href="#buy-PLACEHOLDER-domain-lead-enrichment">Buy Domain Lead Enrichment — $59</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <h2>Pricing</h2>
+    <p class="sub">One-time payment in USD. No subscription. Instant download after checkout. Applicable sales tax / VAT is calculated at checkout by our merchant of record.</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>UK Tender Alerts</h3>
+        <p class="price">$39</p>
+        <ul class="check">
+          <li>Workflow file + setup guide</li>
+          <li>Example configuration</li>
+          <li>7-day email support</li>
+        </ul>
+        <a class="btn" href="#buy-PLACEHOLDER-uk-tender-alerts">Buy — $39</a>
+      </div>
+      <div class="card">
+        <h3>Domain Lead Enrichment</h3>
+        <p class="price">$59</p>
+        <ul class="check">
+          <li>Workflow file + setup guide</li>
+          <li>Example domain CSV + field reference</li>
+          <li>7-day email support</li>
+        </ul>
+        <a class="btn" href="#buy-PLACEHOLDER-domain-lead-enrichment">Buy — $59</a>
+      </div>
+      <div class="card featured">
+        <span class="badge">BEST VALUE</span>
+        <h3>Bundle: both templates</h3>
+        <p class="price">$79 <small>save $19</small></p>
+        <ul class="check">
+          <li>UK Tender Alerts + Domain Lead Enrichment</li>
+          <li>All setup guides and examples</li>
+          <li>7-day email support</li>
+        </ul>
+        <a class="btn" href="#buy-PLACEHOLDER-bundle">Buy bundle — $79</a>
+      </div>
+    </div>
+    <p class="note" style="margin-top:20px">14-day refund if a template cannot be imported or does not work as described — see our <a href="terms.html#refunds">refund policy</a>. Payments are processed by Creem, our merchant of record.</p>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="container">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Do I need an Apify account?</summary>
+      <p>Yes. The templates call public Apify Actors using your own Apify API token, so data runs and usage fees stay on your account. Apify offers a free tier that is enough for testing.</p>
+    </details>
+    <details>
+      <summary>Does it work with n8n Cloud and self-hosted n8n?</summary>
+      <p>Yes. Any recent n8n version with the standard HTTP Request node and Header Auth credentials will work.</p>
+    </details>
+    <details>
+      <summary>How do I receive the files?</summary>
+      <p>Right after payment you get a download link (and an email receipt) from our checkout provider, Creem. The download is a ZIP containing the workflow file, setup guide and example inputs.</p>
+    </details>
+    <details>
+      <summary>Can I modify the workflows?</summary>
+      <p>Absolutely. You can customise them freely for use by yourself or within your team / organisation. Reselling or redistributing the templates is not permitted — see the <a href="terms.html#license">license</a>.</p>
+    </details>
+    <details>
+      <summary>What is your refund policy?</summary>
+      <p>If a template cannot be imported or does not work as described and we cannot fix it, email us within 14 days of purchase for a full refund. Details are in the <a href="terms.html#refunds">Terms of Service</a>.</p>
+    </details>
+    <details>
+      <summary>Do you store my API keys or data?</summary>
+      <p>No. Credentials live in your own n8n instance and the workflows run on your infrastructure. We never see your Apify token, webhook URLs or results.</p>
+    </details>
+    <details>
+      <summary>Can the enrichment template be used for cold emailing?</summary>
+      <p>The template is meant for lawful research on domains you are permitted to process. You must comply with anti-spam and privacy laws in your jurisdiction; using the output for unsolicited bulk email is prohibited by our terms.</p>
+    </details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-box">
+    <h2>Support &amp; contact</h2>
+    <p class="sub" style="margin-left:auto;margin-right:auto">Questions before buying, help with setup, or a refund request — email us and we usually reply within 1–2 business days.</p>
+    <p class="email"><a href="mailto:SUPPORT_EMAIL_PLACEHOLDER">SUPPORT_EMAIL_PLACEHOLDER</a></p>
+    <p class="note">Wirebench is operated by Chunlei Zhu, an individual seller based in China.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div>© 2026 Wirebench · Operated by Chunlei Zhu (China)<br><span class="note">Independent templates for n8n. n8n and Apify are trademarks of their respective owners; Wirebench is not affiliated with or endorsed by them.</span></div>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:SUPPORT_EMAIL_PLACEHOLDER">SUPPORT_EMAIL_PLACEHOLDER</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
