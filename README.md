@@ -6,9 +6,8 @@ Served by GitHub Pages from `main` / root.
 This repository contains **only** marketing pages and legal pages. No paid deliverables
 (workflow files, setup guides) are stored here.
 
-## Placeholders to replace before launch
+Custom domain: https://templates.ivai.online/ (see `CNAME`; DNS: CNAME `templates` -> `zhucl1006.github.io`).
+The old URL https://zhucl1006.github.io/n8n-templates-site/ redirects there.
 
-- Support email: replace every `SUPPORT_EMAIL_PLACEHOLDER`
-  `grep -rl SUPPORT_EMAIL_PLACEHOLDER --include=*.html . | xargs sed -i 's/SUPPORT_EMAIL_PLACEHOLDER/support@example.com/g'`
-- Checkout links: replace `#buy-PLACEHOLDER-uk-tender-alerts`, `#buy-PLACEHOLDER-domain-lead-enrichment`,
-  `#buy-PLACEHOLDER-bundle` in `index.html` with the Creem checkout URLs.
+Pages: `index.html`, `privacy.html`, `terms.html`, `refund.html`, `404.html` (404 uses root-absolute paths).
+Support email: zhucl1006@gmail.com. Checkout: Creem live payment links in `index.html`.
